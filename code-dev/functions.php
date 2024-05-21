@@ -15,6 +15,14 @@ function code_dev_load_scripts(){
         array(), 
         null
     );
+
+    wp_enqueue_script(
+        'dropdown',
+        get_template_directory_uri() . '/js/dropdown.js',
+        array(),
+        0.1,
+        true
+    );
 }
 
 add_action('wp_enqueue_scripts', 'code_dev_load_scripts');
