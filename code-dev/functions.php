@@ -26,3 +26,10 @@ function code_dev_load_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'code_dev_load_scripts');
+
+register_nav_menus(
+    array(
+        'code_dev_main_menu' => 'Main Menu',
+        'code_dev_footer_menu' => 'Footer Menu'
+    )
+);
