@@ -9,11 +9,11 @@ function code_dev_load_scripts(){
         'all'
     );
     
-    wp_enqueue_style(
+    wp_enqueue_style( 
         'google-fonts', 
-        'https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap', 
         array(), 
-        null
+        null 
     );
 
     wp_enqueue_script(
@@ -27,9 +27,20 @@ function code_dev_load_scripts(){
 
 add_action('wp_enqueue_scripts', 'code_dev_load_scripts');
 
-register_nav_menus(
-    array(
-        'code_dev_main_menu' => 'Main Menu',
-        'code_dev_footer_menu' => 'Footer Menu'
-    )
-);
+
+function code_dev_config(){
+    register_nav_menus(
+        array(
+            'code_dev_main_menu' => 'Main Menu',
+            'code_dev_footer_menu' => 'Footer Menu'
+        )
+    );
+
+    $args = array(
+        'height' => 225,
+        'width' => 1920
+    );
+    add_theme_support('custom-header', $args);
+}
+
+add_action('after_setup_theme', 'code_dev_config', 0);
