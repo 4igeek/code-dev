@@ -3,7 +3,13 @@
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                    <h1>Blog</h1>                 
+                    <section class="hero">
+                        Hero
+                    </section>
+                    <section class="services">
+                        Services
+                    </section>
+                    <section class="home-blog">
                         <div class="container">
                             <div class="blog-items">
                             <?php 
@@ -12,12 +18,12 @@
                                     ?>
                                         <article>
                                             <h2><?php the_title() ?></h2>
-                                            <div class="meta-info">
+                                            <dive class="meta-info">
                                                 <p>Posted on <?php echo get_the_date(); ?>  by <?php the_author_posts_link(); ?></p>
                                                 <p>Categories: <?php the_category(' '); ?></p>
-                                                <p>Tags: <?php the_tags('', ', '); ?></p> 
-                                            </div>
-                                            <?php the_content(); ?>
+                                                <p>Tags: <?php the_tags('', ', '); ?></p>
+                                                <?php the_content(); ?>
+                                            </dive>
                                         </article>
                                     <?php
                                     endwhile;
@@ -28,6 +34,7 @@
                             ?>
                             </div>
                         </div>
+                    </section>
                 </main>
             </div>
         </div>
