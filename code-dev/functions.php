@@ -1,5 +1,7 @@
 <?php
 
+require get_template_directory() . '/inc/customizer.php';
+
 function code_dev_load_scripts(){
     wp_enqueue_style(
         'code_dev-style', 
