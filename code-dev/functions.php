@@ -49,8 +49,10 @@ function code_dev_config(){
         'flex-height' => true,
         'flex-width'  => true
     );
-    add_theme_support('custom-logo', $logo_args );
+    add_theme_support( 'custom-logo', $logo_args );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'automatic-feed-links');
+    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 }
 
 add_action('after_setup_theme', 'code_dev_config', 0);
@@ -71,4 +73,8 @@ function code_dev_sidebars(){
     );
 }
 
-// The home service area
+if ( ! function_exists('wp_body_open')) {
+    function wp_body_open(){
+        do_action('wp_body_open');
+    }
+}
