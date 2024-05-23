@@ -7,10 +7,7 @@
                     <!-- <h1>Blog</h1> -->
                         <div class="container">
                             <div class="blog-items">
-                            <?php 
-                                if ( have_posts() ) : 
-                                    while ( have_posts() ) : the_post();
-                                    ?>
+                            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                         <article>
                                             <h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
                                             <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(275, 275)); ?></a>
@@ -21,13 +18,14 @@
                                             </div>
                                             <?php the_excerpt(); ?>
                                         </article>
-                                    <?php
-                                    endwhile;
-                                else : 
-                                    ?>
+                                    <?php endwhile; ?>
+                                        <div class="code-dev-pagination">
+                                            <div class="pages new"><?php previous_posts_link( "<< Newer Posts" ) ; ?></div>
+                                            <div class="pages old"><?php next_posts_link("Older Posts >>"); ?></div>
+                                        </div>
+                                    <?php else : ?>
                                     <p>Nothing to display. Please add some posts.</p>
-                                <?php endif; 
-                            ?>
+                                <?php endif; ?>
                             </div>
                             <?php get_sidebar() ?>
                         </div>

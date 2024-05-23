@@ -383,17 +383,17 @@ Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 
 :root{
     /* Measurements */
-    --wpdevs-big-padding: 60px 0;
-    --wpdevs-mobile-padding: 20px 0;
-    --wpdevs-light-padding: 0 25px;
+    --code-dev-big-padding: 60px 0;
+    --code-dev-mobile-padding: 20px 0;
+    --code-dev-light-padding: 0 25px;
     /* Colors */
-    --wpdevs-gray1: #7C7C7C;
-    --wpdevs-gray2: #F7F7F7;
-    --wpdevs-gray3: #DDDDDD;
-    --wpdevs-light-blue: #2A92D3;
-    --wpdevs-deep-blue: #213C4D;
-    --wpdevs-black-blue: #001E32;
-    --wpdevs-yellow: #CFAF07;
+    --code-dev-gray1: #7C7C7C;
+    --code-dev-gray2: #F7F7F7;
+    --code-dev-gray3: #DDDDDD;
+    --code-dev-light-blue: #2A92D3;
+    --code-dev-deep-blue: #213C4D;
+    --code-dev-black-blue: #001E32;
+    --code-dev-yellow: #CFAF07;
 }
 *,
 ::after,
@@ -434,7 +434,7 @@ p{
     line-height: 1.7rem;
 }
 a{
-    color: var( --wpdevs-gray1 );
+    color: var( --code-dev-gray1 );
     text-decoration: none;
 }
 a:hover,
@@ -455,7 +455,7 @@ img {
 }
 @media (max-width: 575px) {
     .container {
-        padding: var(--wpdevs-light-padding);
+        padding: var(--code-dev-light-padding);
     }
 }
 @media (min-width: 576px) {
@@ -516,7 +516,7 @@ img {
 /* Main Menu */
 
 .menu-area {
-	background: var( --wpdevs-gray2 );
+	background: var( --code-dev-gray2 );
 }
 .main-menu {
     height: 55px;
@@ -544,7 +544,7 @@ img {
 .main-menu ul li a:hover,
 .main-menu ul li a:active
 {
-    color: var( --wpdevs-gray1 );
+    color: var( --code-dev-gray1 );
     transition: .5s all;
 }
 .main-menu ul li a:focus + ul
@@ -635,7 +635,7 @@ img {
         width: auto;
     }
     .main-menu ul.sub-menu a{
-        color: var( --wpdevs-gray1 );
+        color: var( --code-dev-gray1 );
     } 
     .show-dropdown{
         left: 0 !important;
@@ -659,7 +659,7 @@ img {
     text-align: center;
 }
 .hero-items{
-    padding: var( --wpdevs-light-padding );
+    padding: var( --code-dev-light-padding );
 }
 .hero .overlay{
     background: rgb(0 0 0 / 27%);
@@ -675,18 +675,18 @@ img {
     color: #FFFFFF;
     padding: 15px 25px;
     display: inline-block;
-    background: var( --wpdevs-light-blue );
+    background: var( --code-dev-light-blue );
     margin: 20px 0 0;
 }
 .hero .hero-items a:hover{
-    background: var( --wpdevs-yellow );
+    background: var( --code-dev-yellow );
     transition: .5s all;
 }
 
 /* Services */
 .services{ 
-    background: var( --wpdevs-deep-blue ); 
-    padding: var( --wpdevs-big-padding ); 
+    background: var( --code-dev-deep-blue ); 
+    padding: var( --code-dev-big-padding ); 
     color: #ffffff; 
 }
 .services .container{
@@ -698,13 +698,13 @@ img {
     flex: 1 1 250px;
 }
 .services-item{
-    padding: var(--wpdevs-light-padding);
+    padding: var(--code-dev-light-padding);
 }
 .services-item p{
     margin-bottom: 40px;
 }
 .services-item figure{ 
-    background: var( --wpdevs-black-blue );
+    background: var( --code-dev-black-blue );
     padding: 15px; 
 }
 .services h2{ 
@@ -714,7 +714,7 @@ img {
 .services h2::after{
     content: '';
     position: absolute;
-    background-color: var( --wpdevs-light-blue );
+    background-color: var( --code-dev-light-blue );
     width: 35px;
     height: 5px;
     right: calc( 50% - 15px);
@@ -735,7 +735,7 @@ img {
 
 /* Home Blog */
 .home .home-blog{
-    padding: var( --wpdevs-big-padding );
+    padding: var( --code-dev-big-padding );
 }
 .home-blog .container article:first-child{
     grid-area: feat-item;
@@ -752,7 +752,7 @@ img {
 .home .home-blog h2::after{
     content: '';
     position: absolute;
-    background-color: var( --wpdevs-light-blue );
+    background-color: var( --code-dev-light-blue );
     width: 35px;
     height: 5px;
     right: calc( 50% - 15px);
@@ -782,7 +782,7 @@ img {
 }
 .home .home-blog span, 
 .home .home-blog span a{ 
-    color: var( --wpdevs-gray1 ); 
+    color: var( --code-dev-gray1 ); 
     font-weight: normal; 
     text-decoration: none;
     margin: 0 2px 0 0; 
@@ -795,7 +795,7 @@ img {
 
 /* Footer */
 footer{ 
-    background: var( --wpdevs-deep-blue ); 
+    background: var( --code-dev-deep-blue ); 
     padding: 15px 0; 
     color: #FFFFFF; 
 }
@@ -864,7 +864,7 @@ footer .container .row{
 .blog aside,
 .archive aside{
     padding: 25px;
-    background: var( --wpdevs-gray2 );
+    background: var( --code-dev-gray2 );
     height: 100%;
     width: 30%;
 }
@@ -893,11 +893,11 @@ footer .container .row{
     padding: 0;
 }
 #primary > #main{
-    padding: var(--wpdevs-big-padding);
+    padding: var(--code-dev-big-padding);
 }
 @media screen and (max-width: 991px ) {
     #primary > #main{
-        padding: var(--wpdevs-mobile-padding);
+        padding: var(--code-dev-mobile-padding);
     }
 }
 .meta-info p{
@@ -968,12 +968,12 @@ article.post h5{
     color: #FFFFFF;
     padding: 15px 25px;
     display: inline-block;
-    background: var( --wpdevs-light-blue );
+    background: var( --code-dev-light-blue );
     margin: 20px 0 0; 
     border: none;
 }
 #commentform input[type="submit"]:hover{
-    background: var( --wpdevs-yellow );
+    background: var( --code-dev-yellow );
     transition: .5s all;
 }
 #commentform label{
@@ -995,7 +995,7 @@ article.post h5{
 }
 
 /* Pagination */
-.wpdevs-pagination{
+.code-dev-pagination{
     display: flex;
     justify-content: space-between;
 }
@@ -1008,7 +1008,7 @@ article.post h5{
 .nav-links .page-numbers{
     padding: 10px 15px;
     display: inline-block;
-    background: var( --wpdevs-gray3 );
+    background: var( --code-dev-gray3 );
 }
 .nav-links .current{
     background-color: #000000;
