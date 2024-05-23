@@ -5,10 +5,7 @@
                 <?php 
                     while( have_posts() ): the_post(); ?>
                         <?php get_template_part( 'parts/content', 'single' );?>
-                        <div class="code-dev-pagination">
-                            <div class="pages next"><?php next_post_link('&laquo; %link'); ?></div>
-                            <div class="pages previous"><?php previous_post_link('%link &raquo; '); ?></div>
-                        </div>
+                        <?php get_template_part( 'parts/post-pagination' );?>
                         <?php
                         if(comments_open() || get_comments_number()){
                             comments_template();
