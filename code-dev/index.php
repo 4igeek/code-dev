@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+    <?php get_template_part( 'parts/image-banner' );?>
         <!-- -->
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
@@ -8,7 +8,7 @@
                         <div class="container">
                             <div class="blog-items">
                             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                                    <?php get_template_part('parts/article' ); ?>
+                                    <?php get_template_part('parts/content' ); ?>
                                     <?php endwhile; ?>
                                     <?php get_template_part('parts/pagination' ); ?>
                                     <?php else : ?>
