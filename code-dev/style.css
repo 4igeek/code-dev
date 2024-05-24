@@ -794,7 +794,7 @@ img {
 }
 
 /* Footer */
-footer{ 
+.site-footer{ 
     background: var( --code-dev-deep-blue ); 
     padding: 15px 0; 
     color: #FFFFFF; 
