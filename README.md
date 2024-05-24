@@ -1,10 +1,10 @@
-# code-dev WordPress Theme
+## code-dev WordPress Theme
 A custom WordPress theme made from scratch. Feel free to download this theme and play around with it to suit your needs.
 
-# Plugin Free
+## Plugin Free
 No plugins were used in the construction of this theme.
 
-# Installation
+## Installation
 1) Download this theme and unzip it to a known location on your computer.
 2) Visit your WordPress dashboard and go to Appearance > Themes and then click on "Add New Theme".
 3) Select the code-dev.zip file and upload to your site.
@@ -18,5 +18,5 @@ No plugins were used in the construction of this theme.
 4) Visit the "Hero Section" section and fill in all the info there for the home page hero settings.
 5) Publish your settings.
 
-# International
+## International
 The site has a .pot file which you can use to add languages to the site. The recommended tool to use for this is https://poedit.net/.
