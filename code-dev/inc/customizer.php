@@ -106,7 +106,7 @@ function code_dev_customizer( $wp_customize ){
             'set_hero_button_link',
             array(
                 'type' => 'theme_mod',
-                'default' => __('#', 'code-dev'),
+                'default' => '#',
                 'sanitize_callback' => 'esc_url_raw'
 
             )
