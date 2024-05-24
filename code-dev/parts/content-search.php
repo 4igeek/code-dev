@@ -4,12 +4,12 @@
         <?php if( 'post' == get_post_type() ): ?>
         <div class="meta-info">
             <p>
-                Posted in <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?> 
+                <?php _e('Posted in', 'code-dev');?> <?php echo get_the_date(); ?> <?php _e('by', 'code-dev');?> <?php the_author_posts_link(); ?> 
                 <?php if(has_category()):?>
-                    Categories: <?php the_category(' '); ?>
+                    <?php _e('Categories', 'code-dev');?>: <?php the_category(' '); ?>
                 <?php endif; ?>
                 <?php if(has_tag()):?>
-                    Tags: <?php the_tags('', ', '); ?> 
+                    <?php _e('Tags', 'code-dev');?>: <?php the_tags('', ', '); ?> 
                 <?php endif; ?>
             </p>     
         </div>

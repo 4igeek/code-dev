@@ -3,7 +3,7 @@
         <div id="main">
             <div class="container">
                 <div style="text-align: center;">
-                    <h1>Search results for: <?php echo get_search_query(); ?></h1>
+                    <h1><?php _e('Search results for', 'code-dev'); ?>: <?php echo get_search_query(); ?></h1>
                     <?php get_search_form(); ?>
                 </div>
                 <?php while( have_posts() ): the_post(); ?>

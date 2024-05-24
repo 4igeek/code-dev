@@ -31,10 +31,14 @@ add_action('wp_enqueue_scripts', 'code_dev_load_scripts');
 
 
 function code_dev_config(){
+
+    $textdomain = 'code-dev';
+    load_theme_textdomain( $textdomain, get_template_directory( ) . '/languages/' );
+
     register_nav_menus(
         array(
-            'code_dev_main_menu' => 'Main Menu',
-            'code_dev_footer_menu' => 'Footer Menu'
+            'code_dev_main_menu' => __('Main Menu', 'code-dev'),
+            'code_dev_footer_menu' => __('Footer Menu', 'code-dev')
         )
     );
 
@@ -64,9 +68,9 @@ add_action( 'widgets_init', 'code_dev_sidebars' );
 function code_dev_sidebars(){
     register_sidebar(
         array(
-            'name'  => 'Blog Sidebar',
+            'name'  => __('Blog Sidebar', 'code-dev'),
             'id'    => 'sidebar-blog',
-            'description'   => 'This is the Blog Sidebar. You can add your widgets here.',
+            'description'   => __('This is the Blog Sidebar. You can add your widgets here.', 'code-dev'),
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',

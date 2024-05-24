@@ -4,9 +4,9 @@
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
                     <?php 
-                        $hero_title = get_theme_mod('set_hero_title', 'Welcome to my site');
-                        $hero_subtitle = get_theme_mod('set_hero_subtitle', 'Add a subtitle in the theme customizer');
-                        $hero_button_text = get_theme_mod('set_hero_button_text', 'Learn More');
+                        $hero_title = get_theme_mod('set_hero_title', __('Welcome to my site', 'code-dev'));
+                        $hero_subtitle = get_theme_mod('set_hero_subtitle', __('Add a subtitle in the theme customizer', 'code-dev'));
+                        $hero_button_text = get_theme_mod('set_hero_button_text', __('Learn More', 'code-dev'));
                         $hero_button_link = get_theme_mod('set_hero_button_link', '#');
                         $hero_height = get_theme_mod('set_hero_height', 800);
                         $hero_background = wp_get_attachment_url( get_theme_mod('set_hero_background') )
@@ -35,7 +35,7 @@
                                     endwhile;
                                 else : 
                                     ?>
-                                    <p>Nothing to display. Please add some posts.</p>
+                                    <p><?php __('Nothing to display. Please add some posts.', 'code-dev'); ?></p>
                                 <?php endif; 
                             ?>
                             </div>

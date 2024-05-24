@@ -13,7 +13,7 @@
                                     <?php endwhile; ?>
                                     <?php get_template_part( 'parts/pagination' ); ?>
                                     <?php else : ?>
-                                    <p>Nothing to display. Please add some posts.</p>
+                                    <p><?php __('Nothing to display. Please add some posts.', 'code-dev'); ?></p>
                                 <?php endif; ?>
                             </div>
                             <?php get_sidebar() ?>
