@@ -5,9 +5,9 @@
                 <div class="container">
                     <div class="error-404">
                         <header>
-                            <h1><?php _e('Nothing to see here', 'code-dev'); ?></h1>
-                            <p><?php _e('It seems as though you\'ve strolled out into the wilderness. There\'s nothing useful here.', 'code-dev'); ?></p>
-                            <p><?php _e('Perhaps you\'d like to search for something that is here.', 'code-dev'); ?></p>
+                            <h1><?php esc_html_e('Nothing to see here', 'code-dev'); ?></h1>
+                            <p><?php esc_html_e('It seems as though you\'ve strolled out into the wilderness. There\'s nothing useful here.', 'code-dev'); ?></p>
+                            <p><?php esc_html_e('Perhaps you\'d like to search for something that is here.', 'code-dev'); ?></p>
                         </header>
                     </div>
                     <div class="error">

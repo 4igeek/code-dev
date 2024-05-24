@@ -37,8 +37,8 @@ function code_dev_config(){
 
     register_nav_menus(
         array(
-            'code_dev_main_menu' => __('Main Menu', 'code-dev'),
-            'code_dev_footer_menu' => __('Footer Menu', 'code-dev')
+            'code_dev_main_menu' => esc_html__('Main Menu', 'code-dev'),
+            'code_dev_footer_menu' => esc_html__('Footer Menu', 'code-dev')
         )
     );
 
@@ -68,9 +68,9 @@ add_action( 'widgets_init', 'code_dev_sidebars' );
 function code_dev_sidebars(){
     register_sidebar(
         array(
-            'name'  => __('Blog Sidebar', 'code-dev'),
+            'name'  => esc_html__('Blog Sidebar', 'code-dev'),
             'id'    => 'sidebar-blog',
-            'description'   => __('This is the Blog Sidebar. You can add your widgets here.', 'code-dev'),
+            'description'   => esc_html__('This is the Blog Sidebar. You can add your widgets here.', 'code-dev'),
             'before_widget' => '<div class="widget-wrapper">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="widget-title">',

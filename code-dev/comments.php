@@ -25,7 +25,7 @@ if (post_password_required()) {
             <?php
             $comments_number = get_comments_number();
             if ($comments_number === '1') {
-                printf(_x('One comment on &ldquo;%s&rdquo;', 'comments title', 'code-dev'), get_the_title());
+                printf(esc_html_x('One comment on &ldquo;%s&rdquo;', 'comments title', 'code-dev'), get_the_title());
             } else {
                 printf(
                     _nx(
@@ -55,7 +55,7 @@ if (post_password_required()) {
         <?php the_comments_navigation(); ?>
 
         <?php if (!comments_open()) : ?>
-            <p class="no-comments"><?php _e('Comments are closed.', 'code-dev'); ?></p>
+            <p class="no-comments"><?php esc_html_e('Comments are closed.', 'code-dev'); ?></p>
         <?php endif; ?>
     <?php endif; // Check for have_comments(). ?>
 
